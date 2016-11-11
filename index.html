@@ -35,32 +35,47 @@
     <div id="main">   
       <div class="box">
         <div class="pic">
-          <img src="http://cdn.attach.w3cfuns.com/notes/pics/201608/12/133437jl189kfuzh2f7k4i.jpg"/>
+          <img src='imgs/1.jpg'/>
         </div>
       </div>
       <div class="box">
         <div class="pic">
-          <img src="http://cdn.attach.w3cfuns.com/notes/pics/201608/12/133436kmfmx5mxdq5522nz.jpg"/>
+          <img src='imgs/2.jpg'/>
         </div>
       </div>
       <div class="box">
         <div class="pic">
-          <img src="http://cdn.attach.w3cfuns.com/notes/pics/201608/12/133436ayjlzt0oyhn907cg.jpg"/>
+          <img src='imgs/3.jpg'/>
         </div>
       </div>
       <div class="box">
         <div class="pic">
-          <img src="http://cdn.attach.w3cfuns.com/notes/pics/201608/12/133435crrozr54rrye0zg5.jpg"/>
+          <img src='imgs/4.jpg'/>
         </div>
       </div>
       <div class="box">
         <div class="pic">
-          <img src="http://cdn.attach.w3cfuns.com/notes/pics/201608/12/133434wx8gkf8gkckqg6xg.jpg"/>
+          <img src='imgs/5.jpg'/>
         </div>
       </div>
       <div class="box">
         <div class="pic">
-          <img src="http://cdn.attach.w3cfuns.com/notes/pics/201608/12/133433i644dofbyvbyyfio.jpg"/>
+          <img src='imgs/6.jpg'/>
+        </div>
+      </div>
+      <div class="box">
+        <div class="pic">
+          <img src='imgs/7.jpg'/>
+        </div>
+      </div>
+      <div class="box">
+        <div class="pic">
+          <img src='imgs/8.jpg'/>
+        </div>
+      </div>
+      <div class="box">
+        <div class="pic">
+          <img src='imgs/9.jpg'/>
         </div>
       </div>
       
@@ -70,24 +85,16 @@
     <script type="text/javascript" charset="utf-8">
       window.onload = function(){
         waterfall('main','box');
-            var dataInt={'data':[{'src':'133437jl189kfuzh2f7k4i.jpg'},
-                      {'src':'133436kmfmx5mxdq5522nz.jpg'},
-                      {'src':'133436ayjlzt0oyhn907cg.jpg'},
-                      {'src':'133435crrozr54rrye0zg5.jpg'},
-                      {'src':'133434wx8gkf8gkckqg6xg.jpg'},
-                      {'src':'133433i644dofbyvbyyfio.jpg'},
-                      {'src':'133432zrtbnbgbrbyfkmlg.jpg'},
-                      {'src':'133432fk5wffs2f5twfhws.jpg'},
-                      {'src':'133432rcc1n3nkccnichs8.jpg'},
-                      {'src':'133430ahdyyx9cxpccbhpc.jpg'},
-                      {'src':'133430qunng4ar4xqyd29y.jpg'},
-                      {'src':'133428oh2jbvq5n5duuqhn.jpg'},
-                      {'src':'133426s1j23im1bso0sbsm.jpg'},
-                      {'src':'133426y2blql21lq9tnb1l.jpg'},
-                      {'src':'133426v8r3v2033v7drxua.jpg'},
-                      {'src':'134228q0p928ugxbv7xxxx.jpg'},
-                      {'src':'133426hrc5y5awp1aywvla.jpg'},
-                      {'src':'133426aoib8bu1az8zhfk9.jpg'}]};
+            var dataInt={'data':[{'src':'imgs/1.jpg'},
+                      {'src':'imgs/2.jpg'},
+                      {'src':'imgs/3.jpg'},
+                      {'src':'imgs/4.jpg'},
+                      {'src':'imgs/5.jpg'},
+                      {'src':'imgs/6.jpg'},
+                      {'src':'imgs/7.jpg'},
+                      {'src':'imgs/8.jpg'},
+                      
+                      {'src':'imgs/9.jpg'}]};
         
         window.onscroll = function(){
           if (checkscrollside()) {
@@ -101,7 +108,7 @@
               oPic.className ='pic';
               oBox.appendChild(oPic);
               var oImg = document.createElement('img');
-              oImg.src = "http://cdn.attach.w3cfuns.com/notes/pics/201608/12/"+dataInt.data[i].src;
+              oImg.src = dataInt.data[i].src;
               oPic.appendChild(oImg);
             }
             waterfall('main','box');
